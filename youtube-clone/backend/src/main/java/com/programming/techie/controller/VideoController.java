@@ -24,11 +24,11 @@ public class VideoController {
     // to the bucket and setting access control as public key, so that it can be video
     // saving metadata to mongoDB database
 
-
+    //passing file to service  - which is in turn upadating to SW3
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void uploadVideo(@RequestParam("file")MultipartFile file){
-        videoService.uploadedVideo(file);
+    public void uploadVideo (@RequestParam("file") MultipartFile file){
+        videoService.uploadVideo(file);
     }
 
 }

@@ -29,8 +29,8 @@ public class S3Service implements FileService{
 
         //Prepare my key
         var filenameExtension = StringUtils.getFilenameExtension(file.getOriginalFilename());
-
-        var key = UUID.randomUUID().toString() + filenameExtension;
+        // . necessary to .mp4
+        var key = UUID.randomUUID().toString() + "."+ filenameExtension;
 
         //from S3 module
         var metadata = new ObjectMetadata();

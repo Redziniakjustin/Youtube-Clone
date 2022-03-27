@@ -16,17 +16,15 @@ public class VideoService {
     private final S3Service s3Service;
     private final VideoRepository videoRepository;
 
-    public void uploadedVideo (MultipartFile multipartFile){
+    public void uploadVideo (MultipartFile multipartFile){
         //upload video file onto AWS S3
         // Save video Data to DB
         // Minimal functionality to save the video
         String videoUrl = s3Service.uploadFile(multipartFile);
         var video = new Video();
         video.setVideoUrl(videoUrl);
-
-        //saving metadate to mongo DB database
+        //saving metadata to mongo DB database
         videoRepository.save(video);
-
 
     }
 
