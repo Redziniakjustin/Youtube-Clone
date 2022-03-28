@@ -11,8 +11,10 @@ This is a follow along attempt with more complex logic on both the backend and f
 ![image](https://user-images.githubusercontent.com/47091126/160308329-7c7c0cdc-1d1a-4627-8866-31c942f197ad.png)
 
 ## 🥵 Challenges
-Maven dependencies overall.
-IntelliJ & Angular implementation. 
+- Maven dependencies overall.
+- IntelliJ & Angular implementation. 
+- Securely implementing S3 securty identifier and access key. 
+
 
 ## 🐛 Known Bugs
 
