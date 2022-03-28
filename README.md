@@ -1,8 +1,7 @@
 # YouTube Clone -- IN PROGRESS --
 
 ## 💸 Summary
-This is a follow along attempt with more complex logic on both the backend and frontend -step forward from TenmoClone. 
-
+This is a follow along attempt with more complex logic on both the backend and frontend. An attempt to take on more challenging logic, implementation, and structure. 
 
 ## 💥 Features
 - Backend currently up and running and communicating S3 Bucket - able to successfuly post video through Postman. 
